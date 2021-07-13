@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ax+b=0</title>
+</head>
+<body>
+<script>
+    let a = parseInt((prompt("Nhập a")));
+    let b = parseInt((prompt("Nhập b")));
+    if (a == 0 && b == 0) {
+        alert("Phương trình vô số nghiệm");
+    } else if (a == 0 && b != 0) {
+        alert("Phương trình vô nghiệm");
+    } else {
+        alert("Phương trình có nghiệm là: " + (-b / a));
+    }
+</script>
+</body>
+</html>

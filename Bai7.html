@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ax²+bx+c=0</title>
+</head>
+<body>
+<script>
+    let a = parseInt((prompt("Nhập a")));
+    let b = parseInt((prompt("Nhập b")));
+    let c = parseInt((prompt("Nhập c")));
+    let delta = b * b - 4 * a * c;
+    if (a == 0 && b == 0 && c == 0) {
+        alert("Phương trình vô số nghiệm")
+    } else if (a == 0 && b == 0 && c != 0) {
+        alert("Phương trình vô nghiệm")
+    } else if (a == 0 && b != 0) {
+        alert("Phương trình có nghiệm x= " + (-c / b))
+    } else {
+        if (delta < 0) {
+            alert("Phương trình vô nghiệm")
+        } else if (delta == 0) {
+            alert("Phương trình có nghiệm kép x=" + (-b / (2 * a)))
+        } else {
+            let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            alert("Phương trình có 2 nghiệm phân biệt x1=" + x1 + " và x2=" + x2)
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soDien = parseInt(prompt("Nhập doanh số"));
+    let tienDien;
+    if (soDien > 0 && soDien <= 50) {
+        tienDien = soDien * 1678;
+    } else if (soDien > 51 && soDien <= 100) {
+        tienDien = 50 * 1678 + (soDien - 50) * 1734;
+    } else if (soDien > 101 && soDien <= 200) {
+        tienDien = 50 * 1678 + 50 * 1734 + (soDien - 100) * 2014;
+    } else
+        tienDien = 50 * 1678 + 50 * 1734 + 100 * 2014 + (soDien - 200) * 2536;
+    alert("Hoa hồng nhận được là: " + tienDien);
+</script>
+</body>
+</html>
